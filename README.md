@@ -99,5 +99,9 @@ iOS工程文件结构分物理结构和逻辑结构，建议逻辑结构和物�
 #pragma mark - UITextFieldDelegate Methods
 #pragma mark - UITextViewDelegate Methods 
 ```
+11. 必须认真确认每个页面的每次动作只有一个交易，请不要接连发送多个交易
+12. 三方SDK能支持bitcode，经过bitcode优化后可以减小包大小和加快编译速度
+13. cocoapods引用的库指定版本号。cocoapods管理的库不能直接在项目里修改，如需修改必须移出手动导入
+14. 原生的ViewController需在ViewControllerConfigure.xml里进行注册，由ZYRouter统一进行跳转
 
 
